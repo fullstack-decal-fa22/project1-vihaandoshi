@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title> Vihaan Doshi's Personal Website</title>
+<meta name="author" content="Vihaan Doshi">
+<meta name="description" content="A Brief Introduction">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1> Vihaan Doshi</h1>
+<div class="about">
+    <h2> About </h2> 
+    <h5> Hi! I'm a junior studying Computer Science at UC Berkeley. In my free time I enjoy playing <br>
+        chess, badminton, volunteering and watching movies at BAMPFA. </h5>
+</div>
+
+<script> 
+function clickbutton(){
+    document.getElementById("clickme").innerHTML = "Submitted";
+    alert("Submitted!");
+}
+</script>
+
+<div class="work">
+    <h3> Work </h3> 
+    <ul> 
+        <li> Software Engineer Intern - Loyalty Juggernaut</li>
+        <li> Academic Intern - UC Berkeley's CS61B</li> 
+        <li> Web Content Writer - Vendaxo </li> 
+    </ul>
+</div>
+
+<img src="vihaan.JPG" id="pfp"> 
+<div class = "contactme">
+    <h2> Contact Me! </h2> 
+    <div>
+        <img src= "linkedin.png" class="social">
+        <a href= "https://www.linkedin.com/in/vihaandoshi/" class="social"> LinkedIn </a>
+
+        <img src= "github.png" class="social">
+        <a href= "https://github.com/vihaandoshi" class="social"> GitHub </a>
+    </div>
+    <div class="contactmeform">
+        <form>
+        <label for="fname">First Name</label>
+        <input type="text" name="firstname">
+    
+        <label for="surname"> Surname</label>
+        <input type="text" name="surname">
+    
+        <label for="role"> Role </label>
+        <select name="role">
+            <option value="recruiter"> Recruiter </option>
+            <option value="student"> Professor </option>
+            <option value="student"> Manager</option>
+            <option value="grader"> GSI </option>
+            <option value="student"> Student </option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject"></textarea>
+    
+        <input type="submit" onclick="clickbutton()" id="contactsubmit" value="Submit">
+        <h6 id="clickme"> Not submitted! </h6>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body { 
+    background-image: url("gradient.jpg") ;
+    margin: 50px;
+    padding: 20px;
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+#linkedin {
+    background-image: url(linkedin.png);
+    background-position: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+h2:hover {
+    color : rgb(34, 77, 158)
+}
+
+h1 {
+    align-self: center;
+}
+
+input, textarea {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+#pfp {
+    width : 20%;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+}
+#contactsubmit:hover {
+    background-color: #45a049;
+}
+
+.social{
+    width: 20px;
+    height: auto;
+}
+
+.contactmeform {
+    margin: 10px;
+    display: grid;
+}
